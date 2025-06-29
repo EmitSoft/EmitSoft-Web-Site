@@ -1,23 +1,17 @@
-name: Deploy to Vercel
+name: Teste CI - Echo iformacap
 
 on:
   push:
     branches:
-      - master  # ou main, dependendo da sua branch principal
+      - master  # ou main, se for o nome da sua branch principal
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout código
+      - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Instalar Vercel CLI
-        run: npm install -g vercel
-
-      - name: Fazer deploy na Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: |
-          vercel --prod --token $VERCEL_TOKEN --confirm
+      - name: Rodar echo iformacap
+        run: echo "Rodando iformacap..."
