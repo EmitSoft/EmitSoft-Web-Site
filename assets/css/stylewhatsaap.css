@@ -1,0 +1,24 @@
+
+.whatsapp-fixed {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+ 
+}
+
+.whatsapp-fixed:hover {
+  transform: scale(1.1);
+}
